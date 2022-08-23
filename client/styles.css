@@ -1,0 +1,27 @@
+img {
+    width: 300px;
+    margin: 10px;
+}
+
+#tarot-hold{
+    display: flex;
+}
+
+#textHolder{
+    width: 400px;
+    padding: 10px;
+}
+
+.hidden{
+    display: none;
+}
+
+.italics{
+    font-style: italic;
+}
+
+input{
+    width: 400px;
+    display: block;
+    margin: 3px;
+}

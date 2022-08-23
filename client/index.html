@@ -2,9 +2,47 @@
 <html>
   <head>
     <title>Back End Assessment</title>
+    <link rel="stylesheet" href="styles.css"/>
   </head>
   <body class="container">
     <button id="complimentButton">Get a compliment</button>
+    <button id="fortune-btn">Get a Fortune</button>
+    <button id="get-tarot-btn">Draw a Card</button>
+
+    <div class="holder">
+      <p id="output-text"></p>
+    </div>
+
+    <div id="tarot-hold" class="holder">
+      <img id="picture"></img>
+      <div id="textHolder">
+        <h2 id="title"></h2>
+        <p id="upright"></p>
+        <p id="inverted"></p>
+        <p id="quote"></p>
+      </div>
+    </div>
+
+    <div>
+      <h3>CHANGE OR ADD A CARD</h3>
+      <div>
+        <input type="text" placeholder="Title" id="titleInput">
+        <input type="text" placeholder="pic url" id="picInput">
+        <input type="text" placeholder="Upright" id="uprightInput">
+        <input type="text" placeholder="Inverted" id="invertedInput">
+        <input type="text" placeholder="Quote" id="quoteInput">
+        <button id="addTarotBtn">Add a Card</button>
+        <button id="changeTarotBtn">Change a Card</button>
+        <span></span>
+      </div>
+    </div>
+
+    <div>
+      <h3>DELETE A CARD</h3>
+      <input type="text" placeholder="Title" id="deleteInput">
+      <button id="deleteBtn">Delete Card</button>
+    </div>
+
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="main.js"></script>
